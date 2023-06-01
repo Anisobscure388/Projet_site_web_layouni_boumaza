@@ -1,0 +1,101 @@
+body{
+    font-family: 'Advent Pro',sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f1f2f6;
+   
+}
+.imgtop{
+    
+    background-size: cover;
+}
+.title{
+    text-align: center;
+    font-size: 50px;
+    margin-top: -80px;
+    color: #f1f2f6;
+    
+   
+
+}
+form {
+    display: flex;
+    background: #f2f1f1;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 60px;
+  }
+  
+  label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  input[type="text"],
+  input[type="number"],
+  input[type="float"],
+  textarea {
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  button[type="submit"] {
+    background-color: rgb(20, 175, 226);
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"] {
+    background-color: rgb(20, 175, 226);
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+  h2{
+    margin-top: 10px;
+    margin-left: 605px;
+  }
+
+  input[type="file"] {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  select {
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+    
+  
+  input[type="submit"]:hover {
+    background-color: #2d9fe1;
+  }
+  :root{
+    --primary: #2d9fe1;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Advent Pro',sans-serif;
+}

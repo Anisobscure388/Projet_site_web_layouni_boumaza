@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>GSBA</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<style>
+    #map {
+        height: 400px;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="logo"><a href="#">Remonter en haut de page</a></li>
+                <li><a href="connexion.php">Déconnecter</a></li>
+                <li><a href="#contact">Nous contacter</a></li>
+                <li><a href="affichage.php" target="_blank">MAJ barrages</a></li>
+                <li><a href="ajout_barrage.php" target="_blank">Ajout barrage</a></li>
+            </ul>
+        </nav>
+        <div id="imagePrincipale">
+            <h1>Barrages d'eau en Algerie</h1>
+            <div id="premierTrait"></div>
+            <h3>Suivi et gestion des Barrages d'eau</h3>
+        </div>
+    </header>
+    <section id="presentation">
+        <div id="texteIntro">
+            <h2>Pour une meilleur gestion des barrages</h2>
+            <p> Bienvenue sur notre site dédié à la gestion des barrages à eau !
+                Nous sommes ravis de vous accueillir dans cet espace dédié à l'un des aspects les plus essentiels de notre environnement : la gestion intelligente et efficace des barrages à eau. Que vous soyez un professionnel du domaine, un chercheur, un décideur ou simplement un passionné de l'eau et de son utilisation responsable, vous êtes au bon endroit.
+                Les barrages à eau jouent un rôle crucial dans la fourniture d'eau potable, l'irrigation agricole, la production d'énergie hydroélectrique et la protection contre les inondations. Cependant, leur gestion pose souvent des défis complexes liés à la régulation des débits, à la préservation de l'écosystème aquatique et à l'anticipation des risques liés aux changements climatiques.
+                Notre objectif est de vous fournir des informations approfondies, des ressources pertinentes et des solutions innovantes pour vous aider à relever ces défis. Grâce aux avancées technologiques et aux méthodes de gestion modernes, nous vous proposons des outils et des conseils pour optimiser l'utilisation des ressources en eau, minimiser les impacts environnementaux et garantir la sécurité des populations vivant en aval des barrages.
+            </p>
+        </div>
+        <div id="prestations">
+            <div classe="imagesPrestations">
+                <h4>MAP</h4>
+                <a href="map.html"><img src="photo/tofbarprin.jpg" alt="tofbarprin"></a>
+            </div>
+            <div classe="imagesPrestations">
+                <h4>Capacité eau des barrages en MC</h4>
+                <a href="histo1.php"><img src="photo/tofbaranna.jpg" alt="tofbaranna"></a>
+            </div>
+            <div classe="imagesPrestations">
+                <h4>Position GPS des barrages</h4>
+                <a href="histo2.php"><img src="photo/tofbarconst.jpg" alt="tofbarconst"></a>
+            </div>
+        </div>
+    </section>
+    <section id="topologie">
+        <h2>Topographie des barrages en Algérie</h2>
+        <ul>
+            <a href="dest/Descriptif-des-barrages-région-est.html">
+                <li id="RegionEst"><p>Region Est</p></li> 
+            </a>
+            <a href="dest/Descriptif-des-barrages-région-ouest.html">
+                <li id="RegionOuest"><p>Region Ouest</p></li>
+            </a>
+            <a href="dest/Descriptif-des-barrages-région-centre.html">
+                <li id="RegionCentre"><p>Region Centre</p></li>
+            </a>
+            <a href="dest/Descriptif-des-barrages-région-chelif.html">
+                <li id="Regionchelif"><p>Region chelif</p></li>
+            </a>
+        </ul>
+    </section>
+
+  
+    
+    <footer>
+        <h2 id="contact">contacter-nous</h2>
+        <form>
+            <input placeholder="Nom">
+            <input placeholder="E-mail">
+            <textarea placeholder="Votre message ici..."></textarea>
+            <button>Envoyer</button>
+        </form>
+        <div id="deuxiemeTrait"></div>
+        <div id="copyrightEtIcons">
+            <div id="Icons">
+                <a href="http://www.twitter.fr"><i class="fa fa-twitter"></i></a>
+                <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>
+                <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+            </div>
+            <div id="copyright">
+                <span>© fromScratch();2023</span>
+            </div>
+        </div>
+    </footer>
+
+
+    
+    </body>
+</html>

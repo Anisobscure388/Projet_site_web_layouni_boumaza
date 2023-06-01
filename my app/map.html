@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> map Algerie de barrage </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
+     <style>
+        * {
+           margin:5;
+           padding: 0;
+        }
+        #map { height: 900px;
+                width: 1300px;
+                border-radius: 10px;
+               border: 1px solid blue
+               }
+     </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div id="map">
+    </div>
+</div>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoidGVjaGphY2sxOSIsImEiOiJjbGhwMW9xaGYwMjliM2ptZmw4YmxmZDdjIn0.xqK4LkzKHd_xWsLwxCiIXw';
+    
+    var wilayas = [
+            { name: 'El Tarf', coordinates: [8.3146, 36.7557] },
+            { name: 'Souk Ahras', coordinates: [7.9483, 36.2891] },
+            { name: 'Biskra', coordinates: [5.7273, 34.8509] },
+            { name: 'Mostaganem', coordinates: [0.1281, 35.9312] },
+            { name: 'Tlemcen', coordinates: [-1.3169, 34.8783] },
+            { name: 'Boumerdès', coordinates: [3.4689, 36.7591] }
+        ];
+    // Créez une nouvelle carte
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [3.05097, 36.7538],
+      zoom: 4.5 
+           });
+
+    // Ajoutez des contrôles de navigation à la carte
+       map.addControl(new mapboxgl.NavigationControl());
+
+       wilayas.forEach(function(wilaya) {
+            var marker = new mapboxgl.Marker()
+                .setLngLat(wilaya.coordinates)
+                .setPopup(new mapboxgl.Popup().setHTML('<h3>' + wilaya.name + '</h3>'))
+                .addTo(map);
+        });
+  </script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+
+</body>
+</html>

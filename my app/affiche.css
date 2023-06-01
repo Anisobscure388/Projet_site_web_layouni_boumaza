@@ -1,0 +1,71 @@
+body{
+    font-family: 'Advent Pro',sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f1f2f6;
+   
+}
+.imgtop{
+    
+    background-size: cover;
+}
+
+.title{
+    text-align: center;
+    font-size: 50px;
+    margin-top: -80px;
+    color: #f1f2f6;
+    
+   
+
+}
+
+table {
+    border-collapse: collapse; 
+    width: 1590px;
+    margin-top: 110px;
+    margin-left: 40px;
+}
+th{
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    background-color: #a1d5ea;
+} 
+td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+   
+}
+tr:hover {background-color:#f5f5f5;}   
+.text-button {
+    
+    border: none;
+    background: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: underline;
+    color: inherit;
+  }
+  .text-button:hover,
+  .text-button:focus {
+    text-decoration: none;
+    color: #0a9c1b;
+  }
+  .text-button1{
+    
+    border: none;
+    background: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: underline;
+    color: inherit;
+  }
+  .text-button1:hover,
+  .text-button1:focus {
+    text-decoration: none;
+    color: #ff0000;
+  }
